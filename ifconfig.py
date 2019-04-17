@@ -53,7 +53,7 @@ class InterfaceData(object):
         # pprint(self.my_interfaces)
         ipv4 = af_map[socket.AF_INET]
         ipv6 = af_map[socket.AF_INET6]
-        mac = af_map[socket.AF_LINK]
+        mac = af_map[psutil.AF_LINK]
         for iface in sorted(self.my_interfaces):
             output_prefix = f'{iface}:'
             output_data = []
